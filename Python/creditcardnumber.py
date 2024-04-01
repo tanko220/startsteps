@@ -1,18 +1,20 @@
-def count_vowels(word):
-    # Define a set of vowels
-    vowels = {'a', 'e', 'i', 'o', 'u'}
+def hide_credit_card_number(card_number):
+    # Check if the card number is at least 4 characters long
+    if len(card_number) < 4:
+        return "Invalid card number"
     
-    # Initialize a counter for vowels
-    vowel_count = 0
+    # Extract the last four digits of the card number
+    last_four_digits = card_number[-4:]
     
-    # Iterate through each character in the word
-    for char in word:
-        # Check if the character is a vowel
-        if char.lower() in vowels:
-            vowel_count += 1
+    # Replace all characters except the last four with asterisks
+    hidden_part = '*' * (len(card_number) - 4)
     
-    return vowel_count
+    # Concatenate the hidden part with the last four digits
+    hidden_card_number = hidden_part + last_four_digits
+    
+    return hidden_card_number
 
 # Example usage:
-word = input("Enter a word: ")
-print("Number of vowels:", count_vowels(word))
+card_number = input("Enter a credit card number: ")
+hidden_number = hide_credit_card_number(card_number)
+print("Hidden credit card number:", hidden_number)
