@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es5", // Version cible d'ECMAScript
+    "module": "commonjs", // Type de module à générer
+    "jsx": "react", // Activation de la prise en charge JSX
+    "strict": true, // Activation du mode strict de TypeScript
+    "esModuleInterop": true, // Activation de l'interopérabilité des modules ES
+    "skipLibCheck": true, // Ignorer la vérification des fichiers de définition de bibliothèques
+    "forceConsistentCasingInFileNames": true // Vérification de la casse cohérente des noms de fichiers
+  },
+  "include": ["src/**/*"] // Répertoire contenant les fichiers sources TypeScript
+}

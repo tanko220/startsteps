@@ -1,0 +1,206 @@
+/* App.css */
+
+/* Styles généraux */
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif; /* Utilisation d'une police similaire à celle de ParuVendu.fr */
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    /* animation: App-logo-spin infinite 20s linear; */
+    border-radius: 50%;
+    height: 80px;
+    pointer-events: none;
+    float: left; /* Alignement à gauche */
+    margin: 15px;
+  }
+}
+
+.App-header {
+  background-color: #01AE54; /* Couleur de fond du header */
+  padding: 20px 0; /* Ajout de marge intérieure pour le header */
+  overflow: auto; /* Clearfix pour éviter les problèmes d'alignement avec le logo flottant */
+}
+
+.App-header p {
+  font-size: 24px; /* Taille de police plus grande pour le texte de bienvenue */
+  margin-bottom: 20px; /* Ajout de marge en bas */
+  color: #fff; /* Couleur de texte blanc */
+}
+
+.App-link {
+  color: #01AE54; /* Couleur de lien rouge */
+  background-color: #fff; /* Couleur de fond blanc */
+  padding: 10px 20px; /* Ajout de marge intérieure pour le lien */
+  border: 2px solid #01AE54; /* Ajout de bordure */
+  border-radius: 20px; /* Bordure arrondie */
+  text-decoration: none; /* Suppression du soulignement du lien */
+  font-weight: bold; /* Texte en gras */
+  transition: background-color 0.3s, color 0.3s; /* Transition fluide lors du survol */
+}
+
+.App-link:hover {
+  background-color: #d506d5bb; /* Changement de couleur de fond lors du survol */
+  color: #fff; /* Changement de couleur de texte lors du survol */
+}
+
+/* Autres styles restent les mêmes */
+
+.Section {
+  margin-top: 40px;
+}
+
+.Section h2 {
+  color: #01AE54;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Nouveau style pour les annonces populaires */
+.Annonces {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Annonce {
+  width: 30%; /* Largeur de chaque annonce */
+  border: 1px solid #ccc; /* Bordure pour chaque annonce */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.Annonce img {
+  width: 100%;
+  border-radius: 8px; /* Coin arrondi pour l'image */
+  margin-bottom: 10px;
+}
+
+.Annonce h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.Annonce p {
+  font-size: 16px;
+}
+
+/* Styles pour les catégories */
+.Categories {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.Category-link {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #01AE54;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #01AE54;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Category-link:hover {
+  background-color: #01AE54;
+  color: #fff;
+}
+/* App.css */
+
+/* Styles pour la barre de recherche des annonces */
+.SearchBar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.SearchBar input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  margin-right: 10px;
+  width: 300px;
+}
+
+.SearchBar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #01AE54;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.SearchBar button:hover {
+  background-color: #7a127abb;
+}
+/* App.css */
+
+/* Conteneur pour les annonces */
+.AnciennesAnnonces {
+  display: flex;
+  flex-wrap: wrap; /* Permet aux annonces de passer à la ligne */
+  justify-content: space-between; /* Répartit les annonces sur toute la largeur */
+}
+
+/* Style pour chaque annonce */
+.AncienneAnnonce {
+  width: calc(20% - 20px); /* Largeur de chaque annonce (4 annonces par ligne) */
+  margin-bottom: 20px; /* Marge en bas pour chaque annonce */
+  border: 1px solid #ccc; /* Bordure pour chaque annonce */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.AncienneAnnonce img {
+  width: 100%;
+  border-radius: 8px; /* Coin arrondi pour l'image */
+  margin-bottom: 10px;
+}
+
+.AncienneAnnonce h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.AncienneAnnonce p {
+  font-size: 16px;
+  margin-bottom: 10px; /* Marge en bas pour le paragraphe */
+}
+
+.AncienneAnnonce button {
+  background-color: #01AE54;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.AncienneAnnonce button:hover {
+  background-color: #7a127abb;
+}
+/* Footer */
+.Footer {
+  background-color: #3c2c71; /* Couleur de fond */
+  color: #fff; /* Couleur du texte */
+  padding: 20px 0; /* Espacement intérieur */
+  text-align: center; /* Centrer le texte */
+}
+
+.Footer a {
+  color: #fff; /* Couleur des liens */
+  text-decoration: none; /* Suppression du soulignement */
+}
+
+.Footer a:hover {
+  text-decoration: underline; /* Soulignement au survol */
+}
